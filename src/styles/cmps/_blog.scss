@@ -1,0 +1,17 @@
+.card-container{
+  border-top: 1px solid black;
+  padding-top: 15px;
+  display: flex;
+  align-items: stretch;
+  
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-blog{
+  width: 50%;
+  margin: 5px auto 0;
+}

@@ -13,7 +13,8 @@ const Home = () => {
   // const httpLink = process.env.NODE_ENV === 'production' ? '/api/daily/demo' : 'http://localhost:3030/api/daily/demo'
   // const httpLink = 'http://35.158.39.203:3030/api/daily/demo'
   // const httpLink = 'https://WWLB-979479013.eu-central-1.elb.amazonaws.com/api/daily/demo'
-  const httpLink = "http://localhost:2000/api/demo";
+  // const httpLink = "http://localhost:2000/api/demo";
+  const httpLink = "https://central-server-81cq.onrender.com/api/demo";
 
   const { data } = useQuery("repoData", () =>
     fetch(httpLink).then((res) => res.json())

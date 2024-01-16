@@ -38,7 +38,7 @@ const UserProfile = ({userData,days,addData}) => {
             id="dropdown-menu-button"
             style={{ "--bs-btn-font-size":"1.3rem!important" }}
           >
-            <Dropdown.Item href="#"><div onClick={()=>{arrayToCSV(days)}}>Download to SCV</div></Dropdown.Item>
+            <Dropdown.Item href="#"><div onClick={()=>{arrayToCSV(days)}}>Download to CSV</div></Dropdown.Item>
             <Dropdown.Item href="#"> <ResetBtn/> </Dropdown.Item>
           </DropdownButton>
         </Dropdown>

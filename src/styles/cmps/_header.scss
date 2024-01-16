@@ -1,57 +1,69 @@
-header{
+header {
   width: 100vw;
   // background-color: indigo;
-  color: black;  
+  color: black;
   padding-inline: 5%;
   padding-top: 1.5%;
-  h1{
+  h1 {
     padding-left: 5px;
     color: black;
   }
   margin-bottom: 10px;
-  a{
+  a {
     text-decoration: none;
-    color: #737373 ;
-    &:hover{
+    color: #737373;
+    &:hover {
       color: black;
     }
   }
-  span{
+  span {
     color: $clr1;
   }
-  .nav-item{
+  .nav-item {
     font-size: 1.3rem;
   }
-  ul{
+  ul {
     display: flex;
     flex-wrap: wrap;
   }
-  li{
+  li {
     flex: 0 0 auto;
   }
 }
 
-.toggle-btn{
+.toggle-btn {
   display: none;
   border: none;
   background: transparent;
   font-size: 1.3rem;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
 
+.mobile-nav {
+  a {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+    // margin-top: 10px;
+    font-size: 20px;
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+}
 
 @media (max-width: 768px) {
-  header{
+  header {
     padding-top: 5%;
   }
   ul {
-    display: none!important; /* Hide the navbar links in mobile screens */
+    display: none !important; /* Hide the navbar links in mobile screens */
   }
   .toggle-btn {
     display: block; /* Show the toggle in mobile screens */
   }
 }
-
-

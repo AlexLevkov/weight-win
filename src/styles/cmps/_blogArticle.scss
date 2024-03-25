@@ -3,7 +3,9 @@
   margin-top: 50px;
   p {
     font-size: 1.2rem;
-    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
   img {
     width: 30vw;

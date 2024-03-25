@@ -44,7 +44,7 @@ export const questions = [
     section: 3,
     items: [
       {
-        label: `What is your motivation for getting in the right weight?`,
+        label: `What is your motivation for using WeightWin?`,
         type: "check",
         value: "affirm",
         valuesArr: ["Lose Weight", "Get Strong", "Be Healthy"],

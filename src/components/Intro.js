@@ -8,7 +8,7 @@ import { questions } from "./multi_step_form/Questions";
 
 const Intro = ({ submitUserData }) => {
   const errorMsgArr = [
-    "Please make sure you answer is correct.",
+    "Please make sure your answer is correct.",
     "Goal weight should be lower then current weight.",
   ];
 

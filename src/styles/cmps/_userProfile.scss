@@ -1,35 +1,49 @@
-.user-profile-cmp{
+.user-profile-cmp {
   // margin: auto;
   // width: 50%;
   text-align: center;
+  h1 {
+    font-size: 2rem;
+  }
 }
 
-.profile-box-container{
+.profile-box-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30vw 30vw;
+  gap: 10px;
   margin: auto;
   width: 70vw;
 }
 
-
-.profile-box{
+.profile-box {
   width: 100%;
   height: 150px;
   padding: 10px;
   border: 2px $clr1 solid;
   border-radius: 5px;
-  box-shadow: 3px 3px 2px 1px rgba(100,87,87,0.15);
-  -webkit-box-shadow: 3px 3px 2px 1px rgba(100,87,87,0.15);
-  -moz-box-shadow: 3px 3px 2px 1px rgba(100,87,870.15);
+  box-shadow: 3px 3px 2px 1px rgba(100, 87, 87, 0.15);
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(100, 87, 87, 0.15);
+  -moz-box-shadow: 3px 3px 2px 1px rgba(100, 87, 870.15);
+  p {
+    font-size: 1.25rem;
+  }
 }
 
-.motivation-box{
+.profile-box-title {
+  font-weight: bold;
+}
+
+.motivation-box {
   overflow: auto;
 }
 
-.days-to-goal{
-  font-size: 3rem;
+.days-to-goal {
+  padding-top: 10px;
+  font-size: 2rem;
 }
 
-.btn-user{
+.btn-user {
   background-color: $clr1;
   border: none !important;
   color: white;
@@ -37,16 +51,23 @@
   font-size: larger;
   padding: 10px;
 
-  &:hover{
+  &:hover {
     background-color: $clr1;
     color: white;
     transform: scale(1.05);
   }
 }
 
-.btn-container{
-  .btn{
-    --bs-btn-font-size: 1.5rem!important;
+.btn-container {
+  .btn {
+    --bs-btn-font-size: 1.5rem !important;
   }
-} 
+}
 
+// media query
+
+@media (max-width: 768px) {
+  .profile-box-container {
+    grid-template-columns: 1fr;
+  }
+}

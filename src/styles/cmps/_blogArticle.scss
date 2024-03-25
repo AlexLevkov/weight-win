@@ -1,0 +1,26 @@
+.blog-article-container {
+  padding-inline: 20%;
+  margin-top: 50px;
+  p {
+    font-size: 1.2rem;
+  }
+  img {
+    width: 30vw;
+    margin: 30px auto 30px;
+    display: block;
+  }
+}
+
+.author-p {
+  color: rgb(81, 77, 77);
+  margin-top: 5px;
+}
+// media query
+
+@media (max-width: 768px) {
+  .blog-article-container {
+    img {
+      width: 100%;
+    }
+  }
+}

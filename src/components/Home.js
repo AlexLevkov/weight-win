@@ -63,9 +63,9 @@ const Home = () => {
   // user has pressed start demo
   const startDemo = () => {
     const demoUserData = {
-      1: { index: 1, userName: "Alex (Demo Version)" },
+      1: { index: 1, userName: "Dear Guest (Demo Version)" },
       2: { index: 2, currWeight: "70", goalWeight: "65" },
-      3: { index: 3, affirm: "be healthy and fit" },
+      3: { index: 3, affirm: "Be Healthy" },
     };
     setDays(data.days);
     setUserData(demoUserData);

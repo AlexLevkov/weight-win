@@ -1,95 +1,97 @@
-.main-box{
+.main-box {
   align-items: flex-end;
 }
 
-.land-box-txt{
-
-
+.land-box-txt {
   background-color: $clr2;
   padding: 5% 5% 0 5%;
-  h1{
-     font-size: 4.5rem;
-     &:first-child{
-     margin-bottom: -16px;
-     }
-     span{
+  h1 {
+    font-size: 4.5rem;
+    &:first-child {
+      margin-bottom: -16px;
+    }
+    span {
       color: $clr1;
-     }
+    }
   }
-  p{
-    margin-top: 20px!important;
-    font-size: 1.2rem!important;
+  p {
+    margin-top: 20px !important;
+    font-size: 1.2rem !important;
     width: 20vw;
-    span{
+    span {
       font-weight: bold;
     }
   }
-  .starter-btns-container{
+  .starter-btns-container {
     margin-top: 24px;
     justify-content: left;
   }
-  button{
+  button {
     border: 2px solid $clr1;
     width: 130px;
-    &:first-child{ //watch demo
+    &:first-child {
+      //watch demo
       color: white;
       background-color: $clr1;
-    }; //lets start
-    &:nth-child(2){
+    } //lets start
+    &:nth-child(2) {
       background-color: transparent;
       color: $clr1;
-      &:hover{
+      &:hover {
         //
       }
-    };
+    }
 
-    &:hover{
+    &:hover {
       transform: scale(1.05);
       border: 2px solid $clr1;
       // width: 20%;
       // border: 4px solid $clr1;
     }
-   
   }
 }
-
 
 .land-box-img {
   position: absolute;
   z-index: -1;
   right: 0%;
   bottom: 0%;
-  height: 90vh!important;
+  height: 90vh !important;
 }
 
-
-
-  
+// media que
 
 @media (max-width: 768px) {
   .land-box-txt {
-      height: 25vh!important;
-      padding-top: 3%;
-      // text-align: center;
-    h1{
-      font-size: 3rem!important;
+    height: 25vh !important;
+    padding-top: 3%;
+    // text-align: center;
+    h1 {
+      font-size: 3rem !important;
       width: 85%;
       margin: auto;
     }
-    p{
+    p {
       margin-top: 3%;
       width: 85%;
-      margin: auto!important;
-      font-size: 1rem!important;;
+      margin: auto !important;
+      font-size: 1rem !important;
     }
-    .starter-btns-container{
+    .starter-btns-container {
       justify-content: center;
     }
   }
   .land-box-img {
-    height: 65vh!important;
-    margin-top: 0!important;
+    height: 65vh !important;
+    margin-top: 0 !important;
   }
-
 }
-// 576px
+
+@media (max-width: 1440px) {
+  .land-box-txt {
+    padding: 0% 5% 0 5%;
+    p {
+      width: 30vw;
+    }
+  }
+}

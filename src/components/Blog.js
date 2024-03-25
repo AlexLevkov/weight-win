@@ -72,28 +72,30 @@ const Blog = () => {
           {data.map((blog) => {
             return activeTopic === "all" || activeTopic === blog.activeTopic ? (
               <Col key={blog.id} className="mb-3" xs={12} sm={6} md={4} lg={4}>
-                <Card className="mt-5 mt-md-0 w-100" style={{ margin: "auto" }}>
-                  <div
-                    style={{
-                      backgroundImage: `url(${ImgArr[blog.img]})`,
-                      height: "100%",
-                      backgroundSize: "cover",
-                      height: "35vh",
-                    }}
-                  ></div>
-                  <Card.Body>
-                    <Card.Title>{blog.title}</Card.Title>
-                    <Card.Title>
-                      <p className="author-p" style={{fontSize: '1rem'}}>
-                        {blog.author}
-                      </p>
-                    </Card.Title>
-                    <Card.Text>{blog.text.substring(0, 80)}...</Card.Text>
-                    <Button className="btn-app btn-blog" href="#">
-                      <Link to={`/blogs/${blog.id}`}>Continue reading</Link>
-                    </Button>
-                  </Card.Body>
-                </Card>
+                <Link className="blog-link"to={`/blogs/${blog.id}`}>
+                  <Card
+                    className="mt-5 mt-md-0 w-100"
+                    style={{ margin: "auto" }}
+                  >
+                    <div
+                      style={{
+                        backgroundImage: `url(${ImgArr[blog.img]})`,
+                        height: "100%",
+                        backgroundSize: "cover",
+                        height: "35vh",
+                      }}
+                    ></div>
+                    <Card.Body>
+                      <Card.Title>{blog.title}</Card.Title>
+                      <Card.Title>
+                        <p className="author-p" style={{ fontSize: "1rem" }}>
+                          {blog.author}
+                        </p>
+                      </Card.Title>
+                      <Card.Text>{blog.text.substring(0, 80)}...</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Link>
               </Col>
             ) : null;
           })}

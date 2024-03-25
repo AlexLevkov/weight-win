@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import data from "../data/blogs.json";
 
@@ -13,6 +13,10 @@ import food3 from "../imgs/blog/food3.jpg";
 import sport3 from "../imgs/blog/sport3.jpg";
 
 const BlogArticle = ({}) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const ImgArr = {
     health1,
     food1,
@@ -24,8 +28,10 @@ const BlogArticle = ({}) => {
     food3,
     sport3,
   };
+
   const { id } = useParams();
   const article = data.find((article) => article.id === id);
+
   return (
     <div className="blog-article-container">
       <h2>{article.title}</h2>

@@ -67,12 +67,12 @@ const Blog = () => {
         </Nav>
       </Navbar>
 
-      <div className="w-100 m-x d-flex justify-content-between align-items-center">
+      <div className="w-100 m-x d-flex justify-content-center align-items-center">
         <Row className="w-100 card-container">
           {data.map((blog) => {
             return activeTopic === "all" || activeTopic === blog.activeTopic ? (
               <Col key={blog.id} className="mb-3" xs={12} sm={6} md={4} lg={4}>
-                <Link className="blog-link"to={`/blogs/${blog.id}`}>
+                <Link className="blog-link" to={`/blogs/${blog.id}`}>
                   <Card
                     className="mt-5 mt-md-0 w-100"
                     style={{ margin: "auto" }}

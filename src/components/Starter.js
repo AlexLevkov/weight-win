@@ -42,22 +42,3 @@ const Starter = ({ onStartDemo, onStartIntro }) => {
 };
 
 export default Starter;
-
-// <div>
-// <div className='left-txt-container container d-flex '>
-//   <div className="col">
-// <h1>Welcome to</h1>
-// <h1><span>Weight</span>win</h1>
-// <p className='m-0'>We are here to help you lead your way to your goals and be more healthy, we recommend that you watch the app demo before getting started.</p>
-// <div className='starter-btns-container d-flex gap-5'>
-//   <button onClick={onStartDemo} className="btn btn-success">Watch demo</button>
-//   <button onClick={onStartIntro} className="btn btn-success">Start winning</button>
-//     </div>
-//   </div>
-
-//   <div className="col " style={{backgroundImage:`url(${mainBG})`,width:'100vw',backgroundSize: 'cover'}}>
-//     {/* <img className="w-100" src={mainBG}/> */}
-//   </div>
-// </div>
-
-// </div>

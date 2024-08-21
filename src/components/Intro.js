@@ -67,8 +67,11 @@ const Intro = ({ submitUserData }) => {
           return false;
         }
         break;
-
-      default:
+      case 3:
+        if (!answer.affirm) {
+          setErrorModalMsg(errorMsgArr[0]);
+          return false;
+        }
         break;
     }
     return true;

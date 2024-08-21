@@ -69,6 +69,8 @@ const Home = () => {
     };
     setDays(data.days);
     setUserData(demoUserData);
+    service.saveToStorage("daysData", data.days);
+    service.saveToStorage("userData", demoUserData);
     dispatch(updateIntro(false));
     dispatch(updateStart(false));
   };
@@ -89,10 +91,10 @@ const Home = () => {
     <div>
       {isStart && <Starter onStartDemo={startDemo} onStartIntro={startIntro} />}
       {!isStart && isIntro && <Intro submitUserData={submitUserData} />}
-      {!isIntro && (
+      {!isIntro && userData && (
         <UserProfile days={days} userData={userData} addData={addData} />
       )}
-      {!isIntro && <GraphCarousel days={days} />}
+      {!isIntro && days && <GraphCarousel days={days} />}
     </div>
   );
 };

@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import data from "../data/blogs.json";
 
-import health1 from "../imgs/blog/health1.png";
-import food1 from "../imgs/blog/food1.jpg";
-import sport1 from "../imgs/blog/sport1.png";
-import health2 from "../imgs/blog/health2.jpg";
-import food2 from "../imgs/blog/food2.jpg";
-import sport2 from "../imgs/blog/sport2.jpg";
-import health3 from "../imgs/blog/health3.jpg";
-import food3 from "../imgs/blog/food3.jpg";
-import sport3 from "../imgs/blog/sport3.jpg";
+import health1 from "../imgs/blog/health1.webp";
+import food1 from "../imgs/blog/food1.webp";
+import sport1 from "../imgs/blog/sport1.webp";
+import health2 from "../imgs/blog/health2.webp";
+import food2 from "../imgs/blog/food2.webp";
+import sport2 from "../imgs/blog/sport2.webp";
+import health3 from "../imgs/blog/health3.webp";
+import food3 from "../imgs/blog/food3.webp";
+import sport3 from "../imgs/blog/sport3.webp";
 
 const BlogArticle = ({}) => {
   useEffect(() => {
